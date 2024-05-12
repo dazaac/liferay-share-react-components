@@ -1,0 +1,21 @@
+{
+    "name": "provider-bundle",
+    "version": "1.0.0",
+    "description": "Provider Bundle",
+    "devDependencies": {
+        "liferay-npm-bundler": "^2.32.0",
+        "liferay-npm-build-support": "^2.32.0",
+        "@babel/cli": "^7.7.5",
+        "@babel/core": "^7.7.5",
+        "@babel/preset-env": "^7.7.6"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "scripts": {
+        "build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
+        "copy-assets": "lnbs-copy-assets"
+    },
+    "main": "index.js"
+}

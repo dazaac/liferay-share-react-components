@@ -1,0 +1,18 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": false,
+			"web-context": "/components-provider-bundle"
+		}		
+	},
+    "dump-report": true,
+    "config": {
+        "imports": {
+            "provider-bundle": {
+                "react": "*",
+                "react-dom": "*"
+            }
+        }
+    }
+}
